@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Photos Discovery Engine — Core Experience Workbench</title>
+    <meta
+      name="description"
+      content="Empirical research discovery engine investigating personal photo retrieval friction, emergent problem clusters, transparent opportunity matrix, and verifiable research synthesis."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div style="display: flex; align-items: center; justify-content: center; height: 100vh; font-family: 'Inter', sans-serif; color: #94a3b8;">
+        <div style="text-align: center;">
+          <div style="font-size: 2rem; margin-bottom: 1rem;">⚡</div>
+          <div style="font-size: 1.1rem; font-weight: 600; color: #f8fafc;">Initializing Personal Photo Discovery Engine...</div>
+          <div style="font-size: 0.85rem; color: #64748b; margin-top: 0.5rem;">Loading analytical workstation and verified evidence store...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- React 18 + ReactDOM + Babel Standalone for direct browser execution -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js" crossorigin></script>
+
+    <script>
+      (async function bootstrapApp() {
+        try {
+          // Fetch raw App.jsx
+          const response = await fetch("/src/App.jsx");
+          if (!response.ok) {
+            throw new Error(`Failed to load /src/App.jsx: HTTP ${response.status}`);
+          }
+          let sourceCode = await response.text();
+
+          // Transform ES imports to global React destructuring for standalone browser runtime
+          sourceCode = sourceCode.replace(
+            /import\s+React,\s*\{([^}]+)\}\s*from\s*["']react["'];?/g,
+            "const { $1 } = React;"
+          );
+          sourceCode = sourceCode.replace(
+            /import\s+React\s+from\s*["']react["'];?/g,
+            "/* React imported globally */"
+          );
+          sourceCode = sourceCode.replace(
+            /export\s+default\s+function\s+App\b/g,
+            "function App"
+          );
+
+          // Transpile JSX via Babel Standalone
+          const transformed = Babel.transform(sourceCode, {
+            presets: ["react"],
+            filename: "App.jsx"
+          }).code;
+
+          // Execute transpiled component and mount with React 18
+          const createComponent = new Function("React", "ReactDOM", `${transformed}\nreturn App;`);
+          const App = createComponent(window.React, window.ReactDOM);
+
+          const root = ReactDOM.createRoot(document.getElementById("root"));
+          root.render(React.createElement(App));
+        } catch (err) {
+          console.error("Dashboard Bootstrap Failure:", err);
+          document.getElementById("root").innerHTML = `
+            <div style="padding: 3rem; color: #f87171; font-family: monospace; background: #0b0f19; min-height: 100vh;">
+              <h2 style="color: #ef4444; font-size: 1.5rem; margin-bottom: 1rem;">Workstation Initialization Error</h2>
+              <p style="color: #e2e8f0; font-size: 1rem;">${err.message}</p>
+              <pre style="background: #1e293b; padding: 1rem; border-radius: 8px; margin-top: 1rem; color: #94a3b8; overflow-x: auto;">${err.stack || ""}</pre>
+            </div>
+          `;
+        }
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+================================================================================
+NEXTLEAP PRODUCT MANAGEMENT GRADUATION PROJECT — PART 1
+PRODUCT: GOOGLE PHOTOS (CORE EXPERIENCE TEAM)
+================================================================================
+
+BUSINESS GOAL:
+Increase the percentage of users who successfully retrieve a photo they remember
+but cannot precisely describe when they start searching.
+
+PRIMARY RESEARCH QUESTION:
+Why do users fail to retrieve old visual memories when they remember the photo
+but cannot precisely describe it?
+
+RESEARCH SCOPE & CORE CONSTRAINT:
+This is NOT a generic "improve photo search" or "add conversational search" project.
+The discovery engine specifically investigates retrieval friction where:
+  1. The user knows a photo exists.
+  2. The user remembers something about it (visual, temporal, spatial, emotional, or social cue).
+  3. The user's memory is incomplete, imprecise, or distorted.
+  4. The user attempts retrieval in Google Photos.
+  5. Retrieval becomes difficult, frustrating, or completely unsuccessful.
+
+CRITICAL RESEARCH PRINCIPLE:
+Evidence-driven discovery. No predetermined solution. No assumption that AI,
+semantic search, or conversational querying is the correct answer. The engine
+must strictly separate evidence, user statements, observed behaviors, inferences,
+hypotheses, and opportunity areas without fabricating quotes, reviews, or synthetic data.
+
+DELIVERABLE FOR PART 1:
+A real, functional, traceable AI-powered Discovery Engine that ingests multi-source
+public user discussions, classifies relevance, extracts structured retrieval behavior,
+clusters emergent problem patterns, compares transparent opportunity areas, and
+synthesizes research findings as an empirical foundation for Parts 2–8.
+================================================================================

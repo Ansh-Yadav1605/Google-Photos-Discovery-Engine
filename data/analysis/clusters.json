@@ -1,0 +1,725 @@
+[
+  {
+    "cluster_id": "CLUST-01",
+    "name": "Retrieval Relevance Friction in Retrieving Personal Photo",
+    "description": "Users attempting to locate personal photo rely heavily on temporal approximate cues, but experience breakdown at the retrieval relevance stage. The system struggles to map fragmentary user memory anchors onto indexed metadata, resulting in search friction or retrieval abandonment.",
+    "evidence_count": 15,
+    "evidence_ids": [
+      "ee372cc7-ce83-4775-a98a-fc42052cfca1",
+      "d3f28564-ac01-4f19-a4eb-f2bc46f98970",
+      "55cfef92-1dc4-4e28-b80a-b2833d19d5ab",
+      "96cf20ea-26a4-49a7-9450-a18fab2b592a",
+      "72d296da-d0ce-4447-9626-cee64438c379",
+      "dc25a092-9e67-486c-9dfc-1f4f42f16541",
+      "aab32d2a-2805-4e1a-b208-79571f8ed044",
+      "007fe041-2994-4472-ae01-8bd0914065fe",
+      "fd4681df-6853-4fd3-96af-70b77dda5f51",
+      "44b6426d-a51b-4b63-b0b9-35df710d42e1",
+      "3de365f1-b791-4086-9c39-7fadca7aa5e9",
+      "43c89e78-cd83-4d74-8968-9ce87341a3fd",
+      "2fd9c1b7-fea0-4fd2-8600-eb3172edee71",
+      "46bf408a-57ff-4b15-824a-1ac4f32d6953",
+      "41525f3a-0739-4ad8-aec7-74949dfe8dd7"
+    ],
+    "source_diversity": 1,
+    "source_distribution": {
+      "Google Play": 15
+    },
+    "affected_failure_stages": {
+      "RETRIEVAL_RELEVANCE": 15,
+      "SEARCH_REFINEMENT": 15
+    },
+    "dominant_retrieval_objects": [
+      "PERSONAL_PHOTO",
+      "PERSON_OR_PET"
+    ],
+    "recurring_behaviors": [
+      "KEYWORD_SEARCH"
+    ],
+    "common_workarounds": [
+      "MANUAL_TIMELINE_SCROLL",
+      "EXTERNAL_APP_SEARCH"
+    ],
+    "confidence": 0.91,
+    "representative_evidence_ids": [
+      "ee372cc7-ce83-4775-a98a-fc42052cfca1",
+      "d3f28564-ac01-4f19-a4eb-f2bc46f98970",
+      "55cfef92-1dc4-4e28-b80a-b2833d19d5ab"
+    ],
+    "unresolved_questions": [
+      "How frequently do users abandon personal photo retrieval vs resorting to external chat apps?",
+      "What refinement controls could bridge the gap when retrieval relevance fails on initial query?",
+      "Are existing metadata tags sufficient to resolve temporal approximate without manual timeline scrubbing?"
+    ],
+    "created_at": "2026-09-27T11:57:33.320810+00:00"
+  },
+  {
+    "cluster_id": "CLUST-02",
+    "name": "Retrieval Relevance Friction in Retrieving Person Or Pet",
+    "description": "Users attempting to locate person or pet rely heavily on visual appearance cues, but experience breakdown at the retrieval relevance stage. The system struggles to map fragmentary user memory anchors onto indexed metadata, resulting in search friction or retrieval abandonment.",
+    "evidence_count": 11,
+    "evidence_ids": [
+      "2302a3a4-76ed-449b-91b7-3e4ea22ba2ae",
+      "1a216e97-1737-437e-bdb4-2190d0db7b7f",
+      "6fe30fb1-26cc-4087-a56f-615f3ecdfee6",
+      "f764b729-89d1-4401-bdb4-94dbc95a1470",
+      "14149c52-6f40-4c5c-9736-a5e6588ad38d",
+      "71107f9d-fedd-41e9-8724-617cde80184a",
+      "f3d4032f-04cf-4276-a0eb-d115bdee2bc2",
+      "9f372249-7c10-455d-bf2f-74537bcd366e",
+      "6f061fd1-40db-486d-8d58-5cb2f776e8a8",
+      "f498df46-90e5-4262-91ed-ea32db5a6892",
+      "b618b506-2864-462b-a043-d90938704f54"
+    ],
+    "source_diversity": 2,
+    "source_distribution": {
+      "App Store": 1,
+      "Google Play": 10
+    },
+    "affected_failure_stages": {
+      "RETRIEVAL_RELEVANCE": 11,
+      "SEARCH_REFINEMENT": 11
+    },
+    "dominant_retrieval_objects": [
+      "PERSON_OR_PET",
+      "SCREENSHOT"
+    ],
+    "recurring_behaviors": [
+      "KEYWORD_SEARCH",
+      "PEOPLE_PETS_GRID"
+    ],
+    "common_workarounds": [
+      "EXTERNAL_APP_SEARCH",
+      "MANUAL_TIMELINE_SCROLL"
+    ],
+    "confidence": 0.91,
+    "representative_evidence_ids": [
+      "2302a3a4-76ed-449b-91b7-3e4ea22ba2ae",
+      "1a216e97-1737-437e-bdb4-2190d0db7b7f",
+      "6fe30fb1-26cc-4087-a56f-615f3ecdfee6"
+    ],
+    "unresolved_questions": [
+      "How frequently do users abandon person or pet retrieval vs resorting to external chat apps?",
+      "What refinement controls could bridge the gap when retrieval relevance fails on initial query?",
+      "Are existing metadata tags sufficient to resolve visual appearance without manual timeline scrubbing?"
+    ],
+    "created_at": "2026-09-27T11:57:33.320875+00:00"
+  },
+  {
+    "cluster_id": "CLUST-03",
+    "name": "Retrieval Relevance Friction in Retrieving Person Or Pet",
+    "description": "Users attempting to locate person or pet rely heavily on person or subject cues, but experience breakdown at the retrieval relevance stage. The system struggles to map fragmentary user memory anchors onto indexed metadata, resulting in search friction or retrieval abandonment.",
+    "evidence_count": 7,
+    "evidence_ids": [
+      "60f7e674-0773-4dad-9240-b01a226dac32",
+      "b7dd0c4e-5b7c-434c-b4e3-e2c39aa349e0",
+      "9367e44c-3c85-469e-ae56-96706f50f0ad",
+      "a9380fb9-9311-494d-96ee-00e36ed18806",
+      "08231723-6d6a-49d8-ae78-539c27f78d64",
+      "1b44fb37-330a-4a0d-9e55-da91667fa18a",
+      "6120cafc-450b-4bd9-b690-b578ce6fda3d"
+    ],
+    "source_diversity": 2,
+    "source_distribution": {
+      "App Store": 3,
+      "Google Play": 4
+    },
+    "affected_failure_stages": {
+      "RETRIEVAL_RELEVANCE": 7,
+      "SEARCH_REFINEMENT": 6
+    },
+    "dominant_retrieval_objects": [
+      "PERSON_OR_PET"
+    ],
+    "recurring_behaviors": [
+      "KEYWORD_SEARCH",
+      "PEOPLE_PETS_GRID"
+    ],
+    "common_workarounds": [
+      "MANUAL_TIMELINE_SCROLL",
+      "EXTERNAL_APP_SEARCH"
+    ],
+    "confidence": 0.91,
+    "representative_evidence_ids": [
+      "60f7e674-0773-4dad-9240-b01a226dac32",
+      "b7dd0c4e-5b7c-434c-b4e3-e2c39aa349e0",
+      "9367e44c-3c85-469e-ae56-96706f50f0ad"
+    ],
+    "unresolved_questions": [
+      "How frequently do users abandon person or pet retrieval vs resorting to external chat apps?",
+      "What refinement controls could bridge the gap when retrieval relevance fails on initial query?",
+      "Are existing metadata tags sufficient to resolve person or subject without manual timeline scrubbing?"
+    ],
+    "created_at": "2026-09-27T11:57:33.320916+00:00"
+  },
+  {
+    "cluster_id": "CLUST-04",
+    "name": "Retrieval Relevance Friction in Retrieving Personal Photo",
+    "description": "Users attempting to locate personal photo rely heavily on temporal approximate cues, but experience breakdown at the retrieval relevance stage. The system struggles to map fragmentary user memory anchors onto indexed metadata, resulting in search friction or retrieval abandonment.",
+    "evidence_count": 6,
+    "evidence_ids": [
+      "f5c50ee1-fcc7-4e2a-b741-6b2f4dda6cec",
+      "264bf1d9-432b-498f-92d1-f55417782640",
+      "e1f4b130-1a7e-4062-9bec-6eb76bb1aa5c",
+      "07665627-0f95-4cec-b490-6a57c5fc98bf",
+      "c43fdea4-6a4c-43d3-a1e7-594893a05bb6",
+      "4adc5434-8657-45d8-8988-0398eba77769"
+    ],
+    "source_diversity": 1,
+    "source_distribution": {
+      "App Store": 6
+    },
+    "affected_failure_stages": {
+      "RETRIEVAL_RELEVANCE": 6,
+      "SEARCH_REFINEMENT": 6
+    },
+    "dominant_retrieval_objects": [
+      "PERSONAL_PHOTO"
+    ],
+    "recurring_behaviors": [
+      "KEYWORD_SEARCH"
+    ],
+    "common_workarounds": [
+      "MANUAL_TIMELINE_SCROLL",
+      "EXTERNAL_APP_SEARCH"
+    ],
+    "confidence": 0.91,
+    "representative_evidence_ids": [
+      "f5c50ee1-fcc7-4e2a-b741-6b2f4dda6cec",
+      "264bf1d9-432b-498f-92d1-f55417782640",
+      "e1f4b130-1a7e-4062-9bec-6eb76bb1aa5c"
+    ],
+    "unresolved_questions": [
+      "How frequently do users abandon personal photo retrieval vs resorting to external chat apps?",
+      "What refinement controls could bridge the gap when retrieval relevance fails on initial query?",
+      "Are existing metadata tags sufficient to resolve temporal approximate without manual timeline scrubbing?"
+    ],
+    "created_at": "2026-09-27T11:57:33.320951+00:00"
+  },
+  {
+    "cluster_id": "CLUST-05",
+    "name": "Retrieval Relevance Friction in Retrieving Personal Photo",
+    "description": "Users attempting to locate personal photo rely heavily on temporal approximate cues, but experience breakdown at the retrieval relevance stage. The system struggles to map fragmentary user memory anchors onto indexed metadata, resulting in search friction or retrieval abandonment.",
+    "evidence_count": 4,
+    "evidence_ids": [
+      "d2e15b91-5702-418b-a191-5bbaf1f9bb62",
+      "fb9328b4-4db9-4027-944f-bd6351722fb6",
+      "825bf0da-1823-439f-85cb-cf1e5cac5e97",
+      "ca3f4993-26d7-4924-ad2a-fea944e50b81"
+    ],
+    "source_diversity": 1,
+    "source_distribution": {
+      "Google Play": 4
+    },
+    "affected_failure_stages": {
+      "RETRIEVAL_RELEVANCE": 4,
+      "SEARCH_REFINEMENT": 4
+    },
+    "dominant_retrieval_objects": [
+      "PERSONAL_PHOTO"
+    ],
+    "recurring_behaviors": [
+      "KEYWORD_SEARCH"
+    ],
+    "common_workarounds": [
+      "MANUAL_TIMELINE_SCROLL",
+      "EXTERNAL_APP_SEARCH"
+    ],
+    "confidence": 0.91,
+    "representative_evidence_ids": [
+      "d2e15b91-5702-418b-a191-5bbaf1f9bb62",
+      "fb9328b4-4db9-4027-944f-bd6351722fb6",
+      "825bf0da-1823-439f-85cb-cf1e5cac5e97"
+    ],
+    "unresolved_questions": [
+      "How frequently do users abandon personal photo retrieval vs resorting to external chat apps?",
+      "What refinement controls could bridge the gap when retrieval relevance fails on initial query?",
+      "Are existing metadata tags sufficient to resolve temporal approximate without manual timeline scrubbing?"
+    ],
+    "created_at": "2026-09-27T11:57:33.320982+00:00"
+  },
+  {
+    "cluster_id": "CLUST-06",
+    "name": "Retrieval Relevance Friction in Retrieving Screenshot",
+    "description": "Users attempting to locate screenshot rely heavily on spatial or location cues, but experience breakdown at the retrieval relevance stage. The system struggles to map fragmentary user memory anchors onto indexed metadata, resulting in search friction or retrieval abandonment.",
+    "evidence_count": 3,
+    "evidence_ids": [
+      "10aeb136-7263-4c94-b022-649c4f76ffb2",
+      "da712c7e-ce6a-4ee6-b5b4-9b9daffa4b69",
+      "3eecad5c-01ba-4470-96cb-ad95ef2d3e4b"
+    ],
+    "source_diversity": 2,
+    "source_distribution": {
+      "App Store": 1,
+      "Google Play": 2
+    },
+    "affected_failure_stages": {
+      "RETRIEVAL_RELEVANCE": 3,
+      "SEARCH_REFINEMENT": 3
+    },
+    "dominant_retrieval_objects": [
+      "SCREENSHOT",
+      "PERSONAL_PHOTO"
+    ],
+    "recurring_behaviors": [
+      "KEYWORD_SEARCH"
+    ],
+    "common_workarounds": [
+      "MANUAL_TIMELINE_SCROLL"
+    ],
+    "confidence": 0.91,
+    "representative_evidence_ids": [
+      "10aeb136-7263-4c94-b022-649c4f76ffb2",
+      "da712c7e-ce6a-4ee6-b5b4-9b9daffa4b69",
+      "3eecad5c-01ba-4470-96cb-ad95ef2d3e4b"
+    ],
+    "unresolved_questions": [
+      "How frequently do users abandon screenshot retrieval vs resorting to external chat apps?",
+      "What refinement controls could bridge the gap when retrieval relevance fails on initial query?",
+      "Are existing metadata tags sufficient to resolve spatial or location without manual timeline scrubbing?"
+    ],
+    "created_at": "2026-09-27T11:57:33.321023+00:00"
+  },
+  {
+    "cluster_id": "CLUST-07",
+    "name": "Retrieval Relevance Friction in Retrieving Personal Photo",
+    "description": "Users attempting to locate personal photo rely heavily on temporal approximate cues, but experience breakdown at the retrieval relevance stage. The system struggles to map fragmentary user memory anchors onto indexed metadata, resulting in search friction or retrieval abandonment.",
+    "evidence_count": 3,
+    "evidence_ids": [
+      "2a3c7b1f-eaad-46e7-b5b1-dae432265e9b",
+      "a2b86545-e263-4a70-9b71-867ce9dad5b0",
+      "db11f2d5-f8e8-42c2-9896-85d667e6b0f0"
+    ],
+    "source_diversity": 1,
+    "source_distribution": {
+      "App Store": 3
+    },
+    "affected_failure_stages": {
+      "RETRIEVAL_RELEVANCE": 3,
+      "SEARCH_REFINEMENT": 3
+    },
+    "dominant_retrieval_objects": [
+      "PERSONAL_PHOTO"
+    ],
+    "recurring_behaviors": [
+      "KEYWORD_SEARCH"
+    ],
+    "common_workarounds": [
+      "MANUAL_TIMELINE_SCROLL"
+    ],
+    "confidence": 0.91,
+    "representative_evidence_ids": [
+      "2a3c7b1f-eaad-46e7-b5b1-dae432265e9b",
+      "a2b86545-e263-4a70-9b71-867ce9dad5b0",
+      "db11f2d5-f8e8-42c2-9896-85d667e6b0f0"
+    ],
+    "unresolved_questions": [
+      "How frequently do users abandon personal photo retrieval vs resorting to external chat apps?",
+      "What refinement controls could bridge the gap when retrieval relevance fails on initial query?",
+      "Are existing metadata tags sufficient to resolve temporal approximate without manual timeline scrubbing?"
+    ],
+    "created_at": "2026-09-27T11:57:33.321051+00:00"
+  },
+  {
+    "cluster_id": "CLUST-08",
+    "name": "Retrieval Relevance Friction in Retrieving Personal Photo",
+    "description": "Users attempting to locate personal photo rely heavily on visual appearance cues, but experience breakdown at the retrieval relevance stage. The system struggles to map fragmentary user memory anchors onto indexed metadata, resulting in search friction or retrieval abandonment.",
+    "evidence_count": 3,
+    "evidence_ids": [
+      "a59a4405-9b77-4601-b9b9-45b32c1e5d7e",
+      "4124a652-e06a-45c0-8918-c95459e68439",
+      "d6eb7de9-25c9-4aef-9faf-0ad0bb549825"
+    ],
+    "source_diversity": 1,
+    "source_distribution": {
+      "Google Play": 3
+    },
+    "affected_failure_stages": {
+      "RETRIEVAL_RELEVANCE": 3,
+      "SEARCH_REFINEMENT": 3
+    },
+    "dominant_retrieval_objects": [
+      "PERSONAL_PHOTO",
+      "SCREENSHOT"
+    ],
+    "recurring_behaviors": [
+      "KEYWORD_SEARCH",
+      "PEOPLE_PETS_GRID"
+    ],
+    "common_workarounds": [
+      "MANUAL_TIMELINE_SCROLL"
+    ],
+    "confidence": 0.91,
+    "representative_evidence_ids": [
+      "a59a4405-9b77-4601-b9b9-45b32c1e5d7e",
+      "4124a652-e06a-45c0-8918-c95459e68439",
+      "d6eb7de9-25c9-4aef-9faf-0ad0bb549825"
+    ],
+    "unresolved_questions": [
+      "How frequently do users abandon personal photo retrieval vs resorting to external chat apps?",
+      "What refinement controls could bridge the gap when retrieval relevance fails on initial query?",
+      "Are existing metadata tags sufficient to resolve visual appearance without manual timeline scrubbing?"
+    ],
+    "created_at": "2026-09-27T11:57:33.321077+00:00"
+  },
+  {
+    "cluster_id": "CLUST-09",
+    "name": "Retrieval Relevance Friction in Retrieving Person Or Pet",
+    "description": "Users attempting to locate person or pet rely heavily on spatial or location cues, but experience breakdown at the retrieval relevance stage. The system struggles to map fragmentary user memory anchors onto indexed metadata, resulting in search friction or retrieval abandonment.",
+    "evidence_count": 3,
+    "evidence_ids": [
+      "3912b954-934a-4bd2-85d1-8e6ee21ee014",
+      "67f75ed3-bdb9-4268-8e73-3ca50daf223e",
+      "37bec66e-6041-4540-9da9-f7861f9a8e2d"
+    ],
+    "source_diversity": 1,
+    "source_distribution": {
+      "Google Play": 3
+    },
+    "affected_failure_stages": {
+      "RETRIEVAL_RELEVANCE": 3,
+      "SEARCH_REFINEMENT": 3
+    },
+    "dominant_retrieval_objects": [
+      "PERSON_OR_PET",
+      "PERSONAL_PHOTO"
+    ],
+    "recurring_behaviors": [
+      "PEOPLE_PETS_GRID",
+      "KEYWORD_SEARCH"
+    ],
+    "common_workarounds": [
+      "MANUAL_TIMELINE_SCROLL",
+      "EXTERNAL_APP_SEARCH"
+    ],
+    "confidence": 0.91,
+    "representative_evidence_ids": [
+      "3912b954-934a-4bd2-85d1-8e6ee21ee014",
+      "67f75ed3-bdb9-4268-8e73-3ca50daf223e",
+      "37bec66e-6041-4540-9da9-f7861f9a8e2d"
+    ],
+    "unresolved_questions": [
+      "How frequently do users abandon person or pet retrieval vs resorting to external chat apps?",
+      "What refinement controls could bridge the gap when retrieval relevance fails on initial query?",
+      "Are existing metadata tags sufficient to resolve spatial or location without manual timeline scrubbing?"
+    ],
+    "created_at": "2026-09-27T11:57:33.321109+00:00"
+  },
+  {
+    "cluster_id": "CLUST-10",
+    "name": "Retrieval Relevance Friction in Retrieving Personal Photo",
+    "description": "Users attempting to locate personal photo rely heavily on visual appearance cues, but experience breakdown at the retrieval relevance stage. The system struggles to map fragmentary user memory anchors onto indexed metadata, resulting in search friction or retrieval abandonment.",
+    "evidence_count": 3,
+    "evidence_ids": [
+      "0d448cab-69f9-40ce-988c-15573fbed362",
+      "a8aee1d0-1648-4200-ac6c-2ea340af3c9e",
+      "91f4177e-c65e-4d51-82d7-5d2e26351a26"
+    ],
+    "source_diversity": 1,
+    "source_distribution": {
+      "Google Play": 3
+    },
+    "affected_failure_stages": {
+      "RETRIEVAL_RELEVANCE": 3,
+      "SEARCH_REFINEMENT": 3
+    },
+    "dominant_retrieval_objects": [
+      "PERSONAL_PHOTO"
+    ],
+    "recurring_behaviors": [
+      "KEYWORD_SEARCH"
+    ],
+    "common_workarounds": [
+      "EXTERNAL_APP_SEARCH",
+      "MANUAL_TIMELINE_SCROLL"
+    ],
+    "confidence": 0.91,
+    "representative_evidence_ids": [
+      "0d448cab-69f9-40ce-988c-15573fbed362",
+      "a8aee1d0-1648-4200-ac6c-2ea340af3c9e",
+      "91f4177e-c65e-4d51-82d7-5d2e26351a26"
+    ],
+    "unresolved_questions": [
+      "How frequently do users abandon personal photo retrieval vs resorting to external chat apps?",
+      "What refinement controls could bridge the gap when retrieval relevance fails on initial query?",
+      "Are existing metadata tags sufficient to resolve visual appearance without manual timeline scrubbing?"
+    ],
+    "created_at": "2026-09-27T11:57:33.321140+00:00"
+  },
+  {
+    "cluster_id": "CLUST-11",
+    "name": "Result Evaluation Friction in Retrieving Person Or Pet",
+    "description": "Users attempting to locate person or pet rely heavily on visual appearance cues, but experience breakdown at the result evaluation stage. The system struggles to map fragmentary user memory anchors onto indexed metadata, resulting in search friction or retrieval abandonment.",
+    "evidence_count": 2,
+    "evidence_ids": [
+      "6abb8239-fd7c-4008-aafb-5d9419679c3a",
+      "fda64964-cc36-4ae6-82e0-9fa71f948903"
+    ],
+    "source_diversity": 2,
+    "source_distribution": {
+      "App Store": 1,
+      "Google Play": 1
+    },
+    "affected_failure_stages": {
+      "RESULT_EVALUATION": 2
+    },
+    "dominant_retrieval_objects": [
+      "PERSON_OR_PET",
+      "PERSONAL_PHOTO"
+    ],
+    "recurring_behaviors": [
+      "KEYWORD_SEARCH"
+    ],
+    "common_workarounds": [
+      "MANUAL_TIMELINE_SCROLL",
+      "EXTERNAL_APP_SEARCH"
+    ],
+    "confidence": 0.91,
+    "representative_evidence_ids": [
+      "6abb8239-fd7c-4008-aafb-5d9419679c3a",
+      "fda64964-cc36-4ae6-82e0-9fa71f948903"
+    ],
+    "unresolved_questions": [
+      "How frequently do users abandon person or pet retrieval vs resorting to external chat apps?",
+      "What refinement controls could bridge the gap when result evaluation fails on initial query?",
+      "Are existing metadata tags sufficient to resolve visual appearance without manual timeline scrubbing?"
+    ],
+    "created_at": "2026-09-27T11:57:33.321169+00:00"
+  },
+  {
+    "cluster_id": "CLUST-12",
+    "name": "Result Evaluation Friction in Retrieving Person Or Pet",
+    "description": "Users attempting to locate person or pet rely heavily on temporal approximate cues, but experience breakdown at the result evaluation stage. The system struggles to map fragmentary user memory anchors onto indexed metadata, resulting in search friction or retrieval abandonment.",
+    "evidence_count": 2,
+    "evidence_ids": [
+      "f5fc9b7f-60e8-4cb6-8252-649a15fe6e82",
+      "d4992725-8aaa-41de-b2e7-4908d0142b53"
+    ],
+    "source_diversity": 1,
+    "source_distribution": {
+      "Google Play": 2
+    },
+    "affected_failure_stages": {
+      "RESULT_EVALUATION": 2,
+      "NAVIGATION_OR_DISCOVERABILITY": 2
+    },
+    "dominant_retrieval_objects": [
+      "PERSON_OR_PET",
+      "PERSONAL_PHOTO"
+    ],
+    "recurring_behaviors": [
+      "KEYWORD_SEARCH",
+      "PEOPLE_PETS_GRID",
+      "MANUAL_TIMELINE_SCROLL"
+    ],
+    "common_workarounds": [
+      "EXTERNAL_APP_SEARCH",
+      "ENDLESS_MANUAL_SCROLL"
+    ],
+    "confidence": 0.91,
+    "representative_evidence_ids": [
+      "f5fc9b7f-60e8-4cb6-8252-649a15fe6e82",
+      "d4992725-8aaa-41de-b2e7-4908d0142b53"
+    ],
+    "unresolved_questions": [
+      "How frequently do users abandon person or pet retrieval vs resorting to external chat apps?",
+      "What refinement controls could bridge the gap when result evaluation fails on initial query?",
+      "Are existing metadata tags sufficient to resolve temporal approximate without manual timeline scrubbing?"
+    ],
+    "created_at": "2026-09-27T11:57:33.321195+00:00"
+  },
+  {
+    "cluster_id": "CLUST-13",
+    "name": "Navigation Or Discoverability Friction in Retrieving Personal Photo",
+    "description": "Users attempting to locate personal photo rely heavily on temporal approximate cues, but experience breakdown at the navigation or discoverability stage. The system struggles to map fragmentary user memory anchors onto indexed metadata, resulting in search friction or retrieval abandonment.",
+    "evidence_count": 2,
+    "evidence_ids": [
+      "e7128012-edb1-4218-b692-77aee4b5f4c7",
+      "409a310c-5f94-4197-b076-c62d5b452098"
+    ],
+    "source_diversity": 1,
+    "source_distribution": {
+      "Google Play": 2
+    },
+    "affected_failure_stages": {
+      "NAVIGATION_OR_DISCOVERABILITY": 2
+    },
+    "dominant_retrieval_objects": [
+      "PERSONAL_PHOTO"
+    ],
+    "recurring_behaviors": [
+      "MANUAL_TIMELINE_SCROLL",
+      "KEYWORD_SEARCH"
+    ],
+    "common_workarounds": [
+      "ENDLESS_MANUAL_SCROLL"
+    ],
+    "confidence": 0.91,
+    "representative_evidence_ids": [
+      "e7128012-edb1-4218-b692-77aee4b5f4c7",
+      "409a310c-5f94-4197-b076-c62d5b452098"
+    ],
+    "unresolved_questions": [
+      "How frequently do users abandon personal photo retrieval vs resorting to external chat apps?",
+      "What refinement controls could bridge the gap when navigation or discoverability fails on initial query?",
+      "Are existing metadata tags sufficient to resolve temporal approximate without manual timeline scrubbing?"
+    ],
+    "created_at": "2026-09-27T11:57:33.321220+00:00"
+  },
+  {
+    "cluster_id": "CLUST-14",
+    "name": "Metadata Or Indexing Friction in Retrieving Person Or Pet",
+    "description": "Users attempting to locate person or pet rely heavily on person or subject cues, but experience breakdown at the metadata or indexing stage. The system struggles to map fragmentary user memory anchors onto indexed metadata, resulting in search friction or retrieval abandonment.",
+    "evidence_count": 2,
+    "evidence_ids": [
+      "4e1b6b25-f37d-42fc-99ac-dcdcdfa38dcd",
+      "be842681-8d08-4c21-b880-b4e596f6c0b2"
+    ],
+    "source_diversity": 1,
+    "source_distribution": {
+      "Google Play": 2
+    },
+    "affected_failure_stages": {
+      "METADATA_OR_INDEXING": 2
+    },
+    "dominant_retrieval_objects": [
+      "PERSON_OR_PET"
+    ],
+    "recurring_behaviors": [
+      "PEOPLE_PETS_GRID",
+      "KEYWORD_SEARCH"
+    ],
+    "common_workarounds": [
+      "EXTERNAL_APP_SEARCH"
+    ],
+    "confidence": 0.91,
+    "representative_evidence_ids": [
+      "4e1b6b25-f37d-42fc-99ac-dcdcdfa38dcd",
+      "be842681-8d08-4c21-b880-b4e596f6c0b2"
+    ],
+    "unresolved_questions": [
+      "How frequently do users abandon person or pet retrieval vs resorting to external chat apps?",
+      "What refinement controls could bridge the gap when metadata or indexing fails on initial query?",
+      "Are existing metadata tags sufficient to resolve person or subject without manual timeline scrubbing?"
+    ],
+    "created_at": "2026-09-27T11:57:33.321245+00:00"
+  },
+  {
+    "cluster_id": "CLUST-15",
+    "name": "Navigation Or Discoverability Friction in Retrieving Person Or Pet",
+    "description": "Users attempting to locate person or pet rely heavily on temporal approximate cues, but experience breakdown at the navigation or discoverability stage. The system struggles to map fragmentary user memory anchors onto indexed metadata, resulting in search friction or retrieval abandonment.",
+    "evidence_count": 2,
+    "evidence_ids": [
+      "0d420005-a18b-4f2f-9ad7-244aab458987",
+      "559acaee-035c-449f-b3b2-fc875a32a2cd"
+    ],
+    "source_diversity": 1,
+    "source_distribution": {
+      "Google Play": 2
+    },
+    "affected_failure_stages": {
+      "NAVIGATION_OR_DISCOVERABILITY": 2
+    },
+    "dominant_retrieval_objects": [
+      "PERSON_OR_PET",
+      "PERSONAL_PHOTO"
+    ],
+    "recurring_behaviors": [
+      "KEYWORD_SEARCH",
+      "MANUAL_TIMELINE_SCROLL",
+      "PEOPLE_PETS_GRID"
+    ],
+    "common_workarounds": [
+      "ENDLESS_MANUAL_SCROLL",
+      "MANUAL_TIMELINE_SCROLL"
+    ],
+    "confidence": 0.91,
+    "representative_evidence_ids": [
+      "0d420005-a18b-4f2f-9ad7-244aab458987",
+      "559acaee-035c-449f-b3b2-fc875a32a2cd"
+    ],
+    "unresolved_questions": [
+      "How frequently do users abandon person or pet retrieval vs resorting to external chat apps?",
+      "What refinement controls could bridge the gap when navigation or discoverability fails on initial query?",
+      "Are existing metadata tags sufficient to resolve temporal approximate without manual timeline scrubbing?"
+    ],
+    "created_at": "2026-09-27T11:57:33.321269+00:00"
+  },
+  {
+    "cluster_id": "CLUST-16",
+    "name": "Retrieval Relevance Friction in Retrieving Personal Photo",
+    "description": "Users attempting to locate personal photo rely heavily on spatial or location cues, but experience breakdown at the retrieval relevance stage. The system struggles to map fragmentary user memory anchors onto indexed metadata, resulting in search friction or retrieval abandonment.",
+    "evidence_count": 2,
+    "evidence_ids": [
+      "27e58326-869d-490a-a32d-f355c6873b89",
+      "6447f426-a086-4a66-9668-c1f7db914746"
+    ],
+    "source_diversity": 1,
+    "source_distribution": {
+      "Google Play": 2
+    },
+    "affected_failure_stages": {
+      "RETRIEVAL_RELEVANCE": 2,
+      "SEARCH_REFINEMENT": 2
+    },
+    "dominant_retrieval_objects": [
+      "PERSONAL_PHOTO"
+    ],
+    "recurring_behaviors": [
+      "KEYWORD_SEARCH"
+    ],
+    "common_workarounds": [
+      "EXTERNAL_APP_SEARCH"
+    ],
+    "confidence": 0.91,
+    "representative_evidence_ids": [
+      "27e58326-869d-490a-a32d-f355c6873b89",
+      "6447f426-a086-4a66-9668-c1f7db914746"
+    ],
+    "unresolved_questions": [
+      "How frequently do users abandon personal photo retrieval vs resorting to external chat apps?",
+      "What refinement controls could bridge the gap when retrieval relevance fails on initial query?",
+      "Are existing metadata tags sufficient to resolve spatial or location without manual timeline scrubbing?"
+    ],
+    "created_at": "2026-09-27T11:57:33.321294+00:00"
+  },
+  {
+    "cluster_id": "CLUST-17",
+    "name": "Retrieval Relevance Friction in Retrieving Person Or Pet",
+    "description": "Users attempting to locate person or pet rely heavily on person or subject cues, but experience breakdown at the retrieval relevance stage. The system struggles to map fragmentary user memory anchors onto indexed metadata, resulting in search friction or retrieval abandonment.",
+    "evidence_count": 2,
+    "evidence_ids": [
+      "17c1b279-8675-4234-b46d-e8c088db486c",
+      "5b6ce905-5d30-4249-bab5-2ce107e0abf1"
+    ],
+    "source_diversity": 1,
+    "source_distribution": {
+      "Google Play": 2
+    },
+    "affected_failure_stages": {
+      "RETRIEVAL_RELEVANCE": 2,
+      "SEARCH_REFINEMENT": 2
+    },
+    "dominant_retrieval_objects": [
+      "PERSON_OR_PET"
+    ],
+    "recurring_behaviors": [
+      "KEYWORD_SEARCH"
+    ],
+    "common_workarounds": [
+      "EXTERNAL_APP_SEARCH",
+      "MANUAL_TIMELINE_SCROLL"
+    ],
+    "confidence": 0.91,
+    "representative_evidence_ids": [
+      "17c1b279-8675-4234-b46d-e8c088db486c",
+      "5b6ce905-5d30-4249-bab5-2ce107e0abf1"
+    ],
+    "unresolved_questions": [
+      "How frequently do users abandon person or pet retrieval vs resorting to external chat apps?",
+      "What refinement controls could bridge the gap when retrieval relevance fails on initial query?",
+      "Are existing metadata tags sufficient to resolve person or subject without manual timeline scrubbing?"
+    ],
+    "created_at": "2026-09-27T11:57:33.321320+00:00"
+  }
+]

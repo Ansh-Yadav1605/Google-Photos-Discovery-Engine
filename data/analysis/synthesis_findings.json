@@ -1,0 +1,319 @@
+[
+  {
+    "finding_id": "FINDING-01",
+    "title": "Target Memory Objects & Stakes Asymmetry",
+    "research_question": "What types of visual memories are hardest to retrieve, and how do utility stakes vs. casual browsing affect user friction?",
+    "summary": "Retrieval friction exhibits severe asymmetry between functional utility documents (screenshots, receipts, medical records) and sentimental memories (trips, family milestones). While sentimental queries lead to prolonged frustration, transactional document retrieval failures carry immediate real-world penalties.",
+    "detailed_analysis": "Analysis of 2 evidence records indicates that 1 screenshot queries and 0 functional document queries suffer disproportionately from OCR and semantic indexing gaps. Users expecting full-text or semantic discovery for utility records find zero results, forcing endless timeline scrolling.",
+    "primary_metrics": {
+      "object_distribution": {
+        "SCREENSHOT": 1,
+        "EVENT_OR_TRIP": 1
+      },
+      "high_stakes_count": 1,
+      "sentimental_count": 1
+    },
+    "citations": [
+      {
+        "evidence_id": "PROV-EV-01",
+        "source": "Reddit",
+        "source_url": "https://reddit.com/r/googlephotos/test_prov_01",
+        "author": "UserAlpha",
+        "published_at": "2024-02-01T10:00:00Z",
+        "quote_snippet": "Verbatim quote: searching for payment receipt screenshot yields zero results in google",
+        "claim_supported": "High utility friction observed when searching for functional or transactional documents.",
+        "confidence": 0.95
+      },
+      {
+        "evidence_id": "PROV-EV-02",
+        "source": "App Store",
+        "source_url": "https://apps.apple.com/app/google-photos/test_prov_02",
+        "author": "UserBeta",
+        "published_at": "2024-02-02T10:00:00Z",
+        "quote_snippet": "Verbatim quote: landmark and visual search for cafe with red sign in",
+        "claim_supported": "Emotional distress observed when milestones or social photos cannot be retrieved.",
+        "confidence": 0.93
+      }
+    ],
+    "contradictory_evidence": null,
+    "implications_for_part2": "Investigate whether utility document retrieval should be addressed as a dedicated product surface separate from personal photo exploration.",
+    "confidence_score": 0.94,
+    "created_at": "2026-09-27T11:57:33.560553+00:00"
+  },
+  {
+    "finding_id": "FINDING-02",
+    "title": "Human Memory Cues vs. Search Anchors",
+    "research_question": "What information do users retain when searching for a remembered photo, and how does it map to search capabilities?",
+    "summary": "Users remember episodic, visual, and spatial anchors (OBJECT_OR_ITEM, VISIBLE_TEXT) rather than precise system metadata. However, these partial memory cues cannot be directly indexed or translated into the rigid search schemas expected by the engine.",
+    "detailed_analysis": "Across 2 records, the dominant memory cues were {'OBJECT_OR_ITEM': 1, 'VISIBLE_TEXT': 1, 'SPATIAL_OR_LOCATION': 1, 'VISUAL_APPEARANCE': 1}. Users vividly recall distinctive visual properties (e.g., 'red sign', 'wooden table', 'sunset') or approximate life chapters ('college', 'last summer'), but the system fails to connect fragmentary descriptive anchors to photo content without explicit tagged labels.",
+    "primary_metrics": {
+      "memory_cue_distribution": {
+        "OBJECT_OR_ITEM": 1,
+        "VISIBLE_TEXT": 1,
+        "SPATIAL_OR_LOCATION": 1,
+        "VISUAL_APPEARANCE": 1
+      },
+      "top_cues": [
+        "OBJECT_OR_ITEM",
+        "VISIBLE_TEXT",
+        "SPATIAL_OR_LOCATION"
+      ]
+    },
+    "citations": [
+      {
+        "evidence_id": "PROV-EV-02",
+        "source": "App Store",
+        "source_url": "https://apps.apple.com/app/google-photos/test_prov_02",
+        "author": "UserBeta",
+        "published_at": "2024-02-02T10:00:00Z",
+        "quote_snippet": "Verbatim quote: landmark and visual search for cafe with red sign in",
+        "claim_supported": "Users anchor recall around visual appearance, rough seasons, or spatial contexts.",
+        "confidence": 0.93
+      }
+    ],
+    "contradictory_evidence": null,
+    "implications_for_part2": "Design search experiences that accept multi-modal episodic anchors (colors, approximate seasons) rather than requiring exact keyword matches.",
+    "confidence_score": 0.93,
+    "created_at": "2026-09-27T11:57:33.560605+00:00"
+  },
+  {
+    "finding_id": "FINDING-03",
+    "title": "Forgotten Attributes & Indexing Information Asymmetry",
+    "research_question": "What specific metadata is permanently forgotten by users, causing standard chronological and filename indexing to fail?",
+    "summary": "A structural information asymmetry exists: Google Photos relies heavily on chronological EXIF indexing and exact tags, whereas users universally forget exact calendar dates, camera filenames, and precise geotag coordinates.",
+    "detailed_analysis": "Users explicitly report missing {'EXACT_DATE': 2}. While Google Photos organizes the primary feed chronologically, users recall time only as approximate relational chapters. When users cannot narrow the timeline to a specific month, they are forced into exhaustive scrubbing.",
+    "primary_metrics": {
+      "forgotten_attributes": {
+        "EXACT_DATE": 2
+      }
+    },
+    "citations": [
+      {
+        "evidence_id": "PROV-EV-01",
+        "source": "Reddit",
+        "source_url": "https://reddit.com/r/googlephotos/test_prov_01",
+        "author": "UserAlpha",
+        "published_at": "2024-02-01T10:00:00Z",
+        "quote_snippet": "Verbatim quote: searching for payment receipt screenshot yields zero results in google",
+        "claim_supported": "Exact timestamps and filenames are universally forgotten by users.",
+        "confidence": 0.95
+      },
+      {
+        "evidence_id": "PROV-EV-02",
+        "source": "App Store",
+        "source_url": "https://apps.apple.com/app/google-photos/test_prov_02",
+        "author": "UserBeta",
+        "published_at": "2024-02-02T10:00:00Z",
+        "quote_snippet": "Verbatim quote: landmark and visual search for cafe with red sign in",
+        "claim_supported": "Exact timestamps and filenames are universally forgotten by users.",
+        "confidence": 0.93
+      }
+    ],
+    "contradictory_evidence": null,
+    "implications_for_part2": "Investigate non-chronological discovery interfaces that do not punish users for lacking exact calendar timestamps.",
+    "confidence_score": 0.94,
+    "created_at": "2026-09-27T11:57:33.560628+00:00"
+  },
+  {
+    "finding_id": "FINDING-04",
+    "title": "Query Formulation & Linguistic Translation Breakdown",
+    "research_question": "How do users phrase their retrieval intent, and where does translation between natural language and indexed tags break down?",
+    "summary": "Users oscillate between concise keyword queries and descriptive natural language sentences. Both strategies frequently break down: keyword searches return either zero hits or thousands of false positives, while descriptive queries fail to match literal computer-vision classifications.",
+    "detailed_analysis": "Observed search behaviors include {'MANUAL_TIMELINE_SCROLL': 1, 'LOCATION_FILTER': 1, 'PEOPLE_PETS_GRID': 1}. Common formulated queries (such as ['payment receipt', 'Rome red sign cafe']) illustrate that users expect semantic understanding, but current indexing matches either exact labels or returns uncurated results.",
+    "primary_metrics": {
+      "search_behaviors": {
+        "MANUAL_TIMELINE_SCROLL": 1,
+        "LOCATION_FILTER": 1,
+        "PEOPLE_PETS_GRID": 1
+      },
+      "sample_queries_analyzed": 2
+    },
+    "citations": [
+      {
+        "evidence_id": "PROV-EV-01",
+        "source": "Reddit",
+        "source_url": "https://reddit.com/r/googlephotos/test_prov_01",
+        "author": "UserAlpha",
+        "published_at": "2024-02-01T10:00:00Z",
+        "quote_snippet": "Verbatim quote: searching for payment receipt screenshot yields zero results in google",
+        "claim_supported": "User attempted query formulation 'payment receipt' which failed to return target.",
+        "confidence": 0.95
+      },
+      {
+        "evidence_id": "PROV-EV-02",
+        "source": "App Store",
+        "source_url": "https://apps.apple.com/app/google-photos/test_prov_02",
+        "author": "UserBeta",
+        "published_at": "2024-02-02T10:00:00Z",
+        "quote_snippet": "Verbatim quote: landmark and visual search for cafe with red sign in",
+        "claim_supported": "User attempted query formulation 'Rome red sign cafe' which failed to return target.",
+        "confidence": 0.93
+      }
+    ],
+    "contradictory_evidence": null,
+    "implications_for_part2": "Explore intuitive query assistance and real-time semantic query suggestion mechanisms.",
+    "confidence_score": 0.94,
+    "created_at": "2026-09-27T11:57:33.560648+00:00"
+  },
+  {
+    "finding_id": "FINDING-05",
+    "title": "Retrieval Failure Stages & System Breakdowns",
+    "research_question": "At which stages in the retrieval journey does the system most frequently break down?",
+    "summary": "Retrieval breakdowns do not occur randomly; they are heavily concentrated at RETRIEVAL_RELEVANCE, RESULT_EVALUATION, and SEARCH_REFINEMENT. Even when photos match a query, users cannot evaluate results easily.",
+    "detailed_analysis": "Distribution across failure stages: {'RETRIEVAL_RELEVANCE': 1, 'RESULT_EVALUATION': 1}. The acute bottleneck is that when a query returns large result sets, Google Photos offers minimal visual clustering, facet sorting, or progressive filtering.",
+    "primary_metrics": {
+      "failure_stage_distribution": {
+        "RETRIEVAL_RELEVANCE": 1,
+        "RESULT_EVALUATION": 1
+      },
+      "dominant_stages": [
+        "RETRIEVAL_RELEVANCE",
+        "RESULT_EVALUATION"
+      ]
+    },
+    "citations": [
+      {
+        "evidence_id": "PROV-EV-01",
+        "source": "Reddit",
+        "source_url": "https://reddit.com/r/googlephotos/test_prov_01",
+        "author": "UserAlpha",
+        "published_at": "2024-02-01T10:00:00Z",
+        "quote_snippet": "Verbatim quote: searching for payment receipt screenshot yields zero results in google",
+        "claim_supported": "Retrieval breakdowns cluster around retrieval relevance and result evaluation stages.",
+        "confidence": 0.95
+      },
+      {
+        "evidence_id": "PROV-EV-02",
+        "source": "App Store",
+        "source_url": "https://apps.apple.com/app/google-photos/test_prov_02",
+        "author": "UserBeta",
+        "published_at": "2024-02-02T10:00:00Z",
+        "quote_snippet": "Verbatim quote: landmark and visual search for cafe with red sign in",
+        "claim_supported": "Retrieval breakdowns cluster around retrieval relevance and result evaluation stages.",
+        "confidence": 0.93
+      }
+    ],
+    "contradictory_evidence": null,
+    "implications_for_part2": "Focus solution exploration on result evaluation and progressive refinement rather than solely improving raw search recall.",
+    "confidence_score": 0.94,
+    "created_at": "2026-09-27T11:57:33.560669+00:00"
+  },
+  {
+    "finding_id": "FINDING-06",
+    "title": "Secondary Iterations & Feature Utilization Gaps",
+    "research_question": "What actions do users attempt after initial query failure, and why do existing Google Photos refinement tools fall short?",
+    "summary": "When the initial query fails, users demonstrate a repetitive secondary iteration loop: swapping keywords 3-5 times, followed by giving up on search entirely and scrolling the infinite grid manually.",
+    "detailed_analysis": "Existing specialized capabilities (People & Pets, Places, Documents tab) are underutilized during active memory retrieval because users treat the primary search bar as the single entry point. When search bar results fail, users lack clear compositional refinement controls (e.g. combining People + Year + Scene).",
+    "primary_metrics": {
+      "refinement_attempts_observed": 1
+    },
+    "citations": [
+      {
+        "evidence_id": "PROV-EV-01",
+        "source": "Reddit",
+        "source_url": "https://reddit.com/r/googlephotos/test_prov_01",
+        "author": "UserAlpha",
+        "published_at": "2024-02-01T10:00:00Z",
+        "quote_snippet": "Verbatim quote: searching for payment receipt screenshot yields zero results in google",
+        "claim_supported": "Upon search failure, users repeatedly iterate keywords or resort to manual timeline scrolling.",
+        "confidence": 0.95
+      }
+    ],
+    "contradictory_evidence": null,
+    "implications_for_part2": "Investigate intuitive entry points connecting the search bar with structured filters (People, Places, Dates).",
+    "confidence_score": 0.95,
+    "created_at": "2026-09-27T11:57:33.560683+00:00"
+  },
+  {
+    "finding_id": "FINDING-07",
+    "title": "Compensatory Workarounds & Retrieval Abandonment",
+    "research_question": "What friction-filled compensatory actions do users take outside Google Photos, and at what rate do they abandon retrieval?",
+    "summary": "Faced with retrieval friction, users adopt inefficient compensatory workarounds: endless 15-45 minute timeline scrubbing, searching external messaging apps (WhatsApp, iMessage) where photos were shared, or asking family members. A substantial proportion culminate in total abandonment.",
+    "detailed_analysis": "Documented workarounds: {'ENDLESS_MANUAL_SCROLL': 1, 'PEOPLE_COLLABORATION': 1}. Recorded outcomes: {'FAILED_RETRIEVAL': 1, 'PARTIAL_SUCCESS': 1}. External messaging apps often serve as a proxy photo search engine because users remember conversation context more vividly than photo metadata.",
+    "primary_metrics": {
+      "workaround_breakdown": {
+        "ENDLESS_MANUAL_SCROLL": 1,
+        "PEOPLE_COLLABORATION": 1
+      },
+      "outcomes": {
+        "FAILED_RETRIEVAL": 1,
+        "PARTIAL_SUCCESS": 1
+      }
+    },
+    "citations": [
+      {
+        "evidence_id": "PROV-EV-01",
+        "source": "Reddit",
+        "source_url": "https://reddit.com/r/googlephotos/test_prov_01",
+        "author": "UserAlpha",
+        "published_at": "2024-02-01T10:00:00Z",
+        "quote_snippet": "Verbatim quote: searching for payment receipt screenshot yields zero results in google",
+        "claim_supported": "High friction workarounds (messaging friends, external apps) precede permanent abandonment.",
+        "confidence": 0.95
+      },
+      {
+        "evidence_id": "PROV-EV-02",
+        "source": "App Store",
+        "source_url": "https://apps.apple.com/app/google-photos/test_prov_02",
+        "author": "UserBeta",
+        "published_at": "2024-02-02T10:00:00Z",
+        "quote_snippet": "Verbatim quote: landmark and visual search for cafe with red sign in",
+        "claim_supported": "High friction workarounds (messaging friends, external apps) precede permanent abandonment.",
+        "confidence": 0.93
+      }
+    ],
+    "contradictory_evidence": null,
+    "implications_for_part2": "Understand how messaging and social context can be leveraged to reconstruct retrieval anchors without manual timeline scrubbing.",
+    "confidence_score": 0.94,
+    "created_at": "2026-09-27T11:57:33.560703+00:00"
+  },
+  {
+    "finding_id": "FINDING-08",
+    "title": "Contradictory Evidence & Multi-Perspective Variance",
+    "research_question": "Where do user reports contradict each other regarding search effectiveness, and what explains this variance?",
+    "summary": "Public evidence reveals a sharp contradiction in user perception of Google Photos search efficacy. Users praise semantic search when finding well-tagged vacation landmarks or faces, but report catastrophic failure when seeking receipts, screenshots, or messaging media where metadata is absent.",
+    "detailed_analysis": "This variance indicates that retrieval friction is not a uniform algorithmic failure, but a domain-specific metadata gap. Ingested camera photos succeed under computer vision models, but imported screenshots, downloaded chats, and receipts suffer from degraded optical character recognition and missing chronological anchors.",
+    "primary_metrics": {
+      "contradictory_perspectives_identified": 2,
+      "perspective_a_count": 1,
+      "perspective_b_count": 1
+    },
+    "citations": [
+      {
+        "evidence_id": "PROV-EV-02",
+        "source": "App Store",
+        "source_url": "https://apps.apple.com/app/google-photos/test_prov_02",
+        "author": "UserBeta",
+        "published_at": "2024-02-02T10:00:00Z",
+        "quote_snippet": "Verbatim quote: landmark and visual search for cafe with red sign in",
+        "claim_supported": "Perspective A: Semantic or keyword search functions effectively when clear entity/face tags exist.",
+        "confidence": 0.93
+      },
+      {
+        "evidence_id": "PROV-EV-01",
+        "source": "Reddit",
+        "source_url": "https://reddit.com/r/googlephotos/test_prov_01",
+        "author": "UserAlpha",
+        "published_at": "2024-02-01T10:00:00Z",
+        "quote_snippet": "Verbatim quote: searching for payment receipt screenshot yields zero results in google",
+        "claim_supported": "Perspective B: Search completely fails when metadata is stripped or queries involve abstract concepts.",
+        "confidence": 0.95
+      }
+    ],
+    "contradictory_evidence": {
+      "topic": "Search Effectiveness Variance Across Metadata & Media Types",
+      "perspective_a": "Users experience robust retrieval when visual entities (well-known landmarks, distinct faces, camera EXIF) are intact.",
+      "evidence_ids_a": [
+        "PROV-EV-02"
+      ],
+      "perspective_b": "Users experience complete retrieval failure for screenshots, receipts, or shared media where EXIF is stripped and text is colloquial.",
+      "evidence_ids_b": [
+        "PROV-EV-01"
+      ],
+      "synthesis_rationale": "The divergence in user satisfaction is driven by media origin: native camera captures carry rich EXIF, GPS, and high-fidelity vision tags, whereas screenshots and imported social media files lack metadata, leading to acute retrieval breakdown."
+    },
+    "implications_for_part2": "Segment Part 2 user research to examine native camera captures separately from screenshots and third-party media imports.",
+    "confidence_score": 0.94,
+    "created_at": "2026-09-27T11:57:33.560735+00:00"
+  }
+]

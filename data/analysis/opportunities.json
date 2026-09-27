@@ -1,0 +1,510 @@
+[
+  {
+    "opportunity_id": "OPP-01",
+    "cluster_id": "CLUST-01",
+    "cluster_name": "Retrieval Relevance Friction in Retrieving Personal Photo",
+    "evidence_volume": 15,
+    "source_diversity_count": 1,
+    "source_diversity_ratio": 0.2,
+    "recurrence_rate": 1.0,
+    "severity_assessment": "HIGH",
+    "severity_rationale": "High utility loss: Involves critical transaction documents, prescriptions, or receipts required for urgent verification.",
+    "retrieval_impact_rate": 0.87,
+    "workaround_inefficiency": "HIGH",
+    "workaround_details": [
+      "MANUAL_TIMELINE_SCROLL",
+      "EXTERNAL_APP_SEARCH"
+    ],
+    "evidence_confidence": 0.91,
+    "platform_breakdown": {
+      "Google Play": 15
+    },
+    "temporal_span": {
+      "earliest": "2018-10-15T15:35:13+00:00",
+      "latest": "2026-09-09T12:22:30+00:00"
+    },
+    "unresolved_risks": [
+      "Requires validation through primary user interviews in Part 2",
+      "Assumes public review complaints correlate with mobile session abandonment"
+    ],
+    "created_at": "2026-09-27T11:57:33.321492+00:00"
+  },
+  {
+    "opportunity_id": "OPP-02",
+    "cluster_id": "CLUST-02",
+    "cluster_name": "Retrieval Relevance Friction in Retrieving Person Or Pet",
+    "evidence_volume": 11,
+    "source_diversity_count": 2,
+    "source_diversity_ratio": 0.4,
+    "recurrence_rate": 0.91,
+    "severity_assessment": "HIGH",
+    "severity_rationale": "High utility loss: Involves critical transaction documents, prescriptions, or receipts required for urgent verification.",
+    "retrieval_impact_rate": 0.73,
+    "workaround_inefficiency": "HIGH",
+    "workaround_details": [
+      "MANUAL_TIMELINE_SCROLL",
+      "EXTERNAL_APP_SEARCH"
+    ],
+    "evidence_confidence": 0.91,
+    "platform_breakdown": {
+      "App Store": 1,
+      "Google Play": 10
+    },
+    "temporal_span": {
+      "earliest": "2019-07-02T10:26:52+00:00",
+      "latest": "2026-09-18T19:25:40-07:00"
+    },
+    "unresolved_risks": [
+      "Requires validation through primary user interviews in Part 2",
+      "Assumes public review complaints correlate with mobile session abandonment"
+    ],
+    "created_at": "2026-09-27T11:57:33.321528+00:00"
+  },
+  {
+    "opportunity_id": "OPP-03",
+    "cluster_id": "CLUST-03",
+    "cluster_name": "Retrieval Relevance Friction in Retrieving Person Or Pet",
+    "evidence_volume": 7,
+    "source_diversity_count": 2,
+    "source_diversity_ratio": 0.4,
+    "recurrence_rate": 1.0,
+    "severity_assessment": "LOW",
+    "severity_rationale": "Low to moderate friction: General catalog retrieval or casual snapshot discovery.",
+    "retrieval_impact_rate": 0.71,
+    "workaround_inefficiency": "HIGH",
+    "workaround_details": [
+      "MANUAL_TIMELINE_SCROLL",
+      "EXTERNAL_APP_SEARCH"
+    ],
+    "evidence_confidence": 0.91,
+    "platform_breakdown": {
+      "App Store": 3,
+      "Google Play": 4
+    },
+    "temporal_span": {
+      "earliest": "2024-08-19T17:57:10+00:00",
+      "latest": "2026-09-20T06:19:36-07:00"
+    },
+    "unresolved_risks": [
+      "Requires validation through primary user interviews in Part 2",
+      "Assumes public review complaints correlate with mobile session abandonment"
+    ],
+    "created_at": "2026-09-27T11:57:33.321564+00:00"
+  },
+  {
+    "opportunity_id": "OPP-04",
+    "cluster_id": "CLUST-04",
+    "cluster_name": "Retrieval Relevance Friction in Retrieving Personal Photo",
+    "evidence_volume": 6,
+    "source_diversity_count": 1,
+    "source_diversity_ratio": 0.2,
+    "recurrence_rate": 1.0,
+    "severity_assessment": "LOW",
+    "severity_rationale": "Low to moderate friction: General catalog retrieval or casual snapshot discovery.",
+    "retrieval_impact_rate": 0.33,
+    "workaround_inefficiency": "HIGH",
+    "workaround_details": [
+      "MANUAL_TIMELINE_SCROLL",
+      "EXTERNAL_APP_SEARCH"
+    ],
+    "evidence_confidence": 0.91,
+    "platform_breakdown": {
+      "App Store": 6
+    },
+    "temporal_span": {
+      "earliest": "2026-09-19T09:22:55-07:00",
+      "latest": "2026-09-21T12:10:00-07:00"
+    },
+    "unresolved_risks": [
+      "Requires validation through primary user interviews in Part 2",
+      "Assumes public review complaints correlate with mobile session abandonment"
+    ],
+    "created_at": "2026-09-27T11:57:33.321589+00:00"
+  },
+  {
+    "opportunity_id": "OPP-05",
+    "cluster_id": "CLUST-05",
+    "cluster_name": "Retrieval Relevance Friction in Retrieving Personal Photo",
+    "evidence_volume": 4,
+    "source_diversity_count": 1,
+    "source_diversity_ratio": 0.2,
+    "recurrence_rate": 1.0,
+    "severity_assessment": "LOW",
+    "severity_rationale": "Low to moderate friction: General catalog retrieval or casual snapshot discovery.",
+    "retrieval_impact_rate": 0.5,
+    "workaround_inefficiency": "HIGH",
+    "workaround_details": [
+      "MANUAL_TIMELINE_SCROLL",
+      "EXTERNAL_APP_SEARCH"
+    ],
+    "evidence_confidence": 0.91,
+    "platform_breakdown": {
+      "Google Play": 4
+    },
+    "temporal_span": {
+      "earliest": "2020-06-20T04:33:16+00:00",
+      "latest": "2026-09-11T14:18:47+00:00"
+    },
+    "unresolved_risks": [
+      "Requires validation through primary user interviews in Part 2",
+      "Assumes public review complaints correlate with mobile session abandonment"
+    ],
+    "created_at": "2026-09-27T11:57:33.321609+00:00"
+  },
+  {
+    "opportunity_id": "OPP-06",
+    "cluster_id": "CLUST-06",
+    "cluster_name": "Retrieval Relevance Friction in Retrieving Screenshot",
+    "evidence_volume": 3,
+    "source_diversity_count": 2,
+    "source_diversity_ratio": 0.4,
+    "recurrence_rate": 1.0,
+    "severity_assessment": "HIGH",
+    "severity_rationale": "High utility loss: Involves critical transaction documents, prescriptions, or receipts required for urgent verification.",
+    "retrieval_impact_rate": 1.0,
+    "workaround_inefficiency": "LOW",
+    "workaround_details": [
+      "MANUAL_TIMELINE_SCROLL"
+    ],
+    "evidence_confidence": 0.91,
+    "platform_breakdown": {
+      "App Store": 1,
+      "Google Play": 2
+    },
+    "temporal_span": {
+      "earliest": "2026-08-24T02:27:01+00:00",
+      "latest": "2026-09-22T09:05:54-07:00"
+    },
+    "unresolved_risks": [
+      "Requires validation through primary user interviews in Part 2",
+      "Assumes public review complaints correlate with mobile session abandonment"
+    ],
+    "created_at": "2026-09-27T11:57:33.321639+00:00"
+  },
+  {
+    "opportunity_id": "OPP-07",
+    "cluster_id": "CLUST-07",
+    "cluster_name": "Retrieval Relevance Friction in Retrieving Personal Photo",
+    "evidence_volume": 3,
+    "source_diversity_count": 1,
+    "source_diversity_ratio": 0.2,
+    "recurrence_rate": 1.0,
+    "severity_assessment": "LOW",
+    "severity_rationale": "Low to moderate friction: General catalog retrieval or casual snapshot discovery.",
+    "retrieval_impact_rate": 1.0,
+    "workaround_inefficiency": "LOW",
+    "workaround_details": [
+      "MANUAL_TIMELINE_SCROLL"
+    ],
+    "evidence_confidence": 0.91,
+    "platform_breakdown": {
+      "App Store": 3
+    },
+    "temporal_span": {
+      "earliest": "2026-09-19T13:02:49-07:00",
+      "latest": "2026-09-20T22:03:03-07:00"
+    },
+    "unresolved_risks": [
+      "Requires validation through primary user interviews in Part 2",
+      "Assumes public review complaints correlate with mobile session abandonment"
+    ],
+    "created_at": "2026-09-27T11:57:33.321659+00:00"
+  },
+  {
+    "opportunity_id": "OPP-08",
+    "cluster_id": "CLUST-08",
+    "cluster_name": "Retrieval Relevance Friction in Retrieving Personal Photo",
+    "evidence_volume": 3,
+    "source_diversity_count": 1,
+    "source_diversity_ratio": 0.2,
+    "recurrence_rate": 1.0,
+    "severity_assessment": "HIGH",
+    "severity_rationale": "High utility loss: Involves critical transaction documents, prescriptions, or receipts required for urgent verification.",
+    "retrieval_impact_rate": 1.0,
+    "workaround_inefficiency": "LOW",
+    "workaround_details": [
+      "MANUAL_TIMELINE_SCROLL"
+    ],
+    "evidence_confidence": 0.91,
+    "platform_breakdown": {
+      "Google Play": 3
+    },
+    "temporal_span": {
+      "earliest": "2022-12-08T03:27:46+00:00",
+      "latest": "2026-07-08T17:02:15+00:00"
+    },
+    "unresolved_risks": [
+      "Requires validation through primary user interviews in Part 2",
+      "Assumes public review complaints correlate with mobile session abandonment"
+    ],
+    "created_at": "2026-09-27T11:57:33.321678+00:00"
+  },
+  {
+    "opportunity_id": "OPP-09",
+    "cluster_id": "CLUST-09",
+    "cluster_name": "Retrieval Relevance Friction in Retrieving Person Or Pet",
+    "evidence_volume": 3,
+    "source_diversity_count": 1,
+    "source_diversity_ratio": 0.2,
+    "recurrence_rate": 1.0,
+    "severity_assessment": "LOW",
+    "severity_rationale": "Low to moderate friction: General catalog retrieval or casual snapshot discovery.",
+    "retrieval_impact_rate": 0.67,
+    "workaround_inefficiency": "HIGH",
+    "workaround_details": [
+      "MANUAL_TIMELINE_SCROLL",
+      "EXTERNAL_APP_SEARCH"
+    ],
+    "evidence_confidence": 0.91,
+    "platform_breakdown": {
+      "Google Play": 3
+    },
+    "temporal_span": {
+      "earliest": "2024-10-01T04:34:12+00:00",
+      "latest": "2026-08-22T23:18:16+00:00"
+    },
+    "unresolved_risks": [
+      "Requires validation through primary user interviews in Part 2",
+      "Assumes public review complaints correlate with mobile session abandonment"
+    ],
+    "created_at": "2026-09-27T11:57:33.321698+00:00"
+  },
+  {
+    "opportunity_id": "OPP-10",
+    "cluster_id": "CLUST-10",
+    "cluster_name": "Retrieval Relevance Friction in Retrieving Personal Photo",
+    "evidence_volume": 3,
+    "source_diversity_count": 1,
+    "source_diversity_ratio": 0.2,
+    "recurrence_rate": 1.0,
+    "severity_assessment": "LOW",
+    "severity_rationale": "Low to moderate friction: General catalog retrieval or casual snapshot discovery.",
+    "retrieval_impact_rate": 1.0,
+    "workaround_inefficiency": "HIGH",
+    "workaround_details": [
+      "MANUAL_TIMELINE_SCROLL",
+      "EXTERNAL_APP_SEARCH"
+    ],
+    "evidence_confidence": 0.91,
+    "platform_breakdown": {
+      "Google Play": 3
+    },
+    "temporal_span": {
+      "earliest": "2019-02-06T18:49:32+00:00",
+      "latest": "2026-04-23T14:09:40+00:00"
+    },
+    "unresolved_risks": [
+      "Requires validation through primary user interviews in Part 2",
+      "Assumes public review complaints correlate with mobile session abandonment"
+    ],
+    "created_at": "2026-09-27T11:57:33.321716+00:00"
+  },
+  {
+    "opportunity_id": "OPP-11",
+    "cluster_id": "CLUST-11",
+    "cluster_name": "Result Evaluation Friction in Retrieving Person Or Pet",
+    "evidence_volume": 2,
+    "source_diversity_count": 2,
+    "source_diversity_ratio": 0.4,
+    "recurrence_rate": 1.0,
+    "severity_assessment": "LOW",
+    "severity_rationale": "Low to moderate friction: General catalog retrieval or casual snapshot discovery.",
+    "retrieval_impact_rate": 1.0,
+    "workaround_inefficiency": "HIGH",
+    "workaround_details": [
+      "MANUAL_TIMELINE_SCROLL",
+      "EXTERNAL_APP_SEARCH"
+    ],
+    "evidence_confidence": 0.91,
+    "platform_breakdown": {
+      "App Store": 1,
+      "Google Play": 1
+    },
+    "temporal_span": {
+      "earliest": "2026-08-20T09:22:11+00:00",
+      "latest": "2026-09-18T20:18:55-07:00"
+    },
+    "unresolved_risks": [
+      "Requires validation through primary user interviews in Part 2",
+      "Assumes public review complaints correlate with mobile session abandonment"
+    ],
+    "created_at": "2026-09-27T11:57:33.321735+00:00"
+  },
+  {
+    "opportunity_id": "OPP-12",
+    "cluster_id": "CLUST-12",
+    "cluster_name": "Result Evaluation Friction in Retrieving Person Or Pet",
+    "evidence_volume": 2,
+    "source_diversity_count": 1,
+    "source_diversity_ratio": 0.2,
+    "recurrence_rate": 1.0,
+    "severity_assessment": "LOW",
+    "severity_rationale": "Low to moderate friction: General catalog retrieval or casual snapshot discovery.",
+    "retrieval_impact_rate": 1.0,
+    "workaround_inefficiency": "HIGH",
+    "workaround_details": [
+      "ENDLESS_MANUAL_SCROLL",
+      "EXTERNAL_APP_SEARCH"
+    ],
+    "evidence_confidence": 0.91,
+    "platform_breakdown": {
+      "Google Play": 2
+    },
+    "temporal_span": {
+      "earliest": "2026-07-11T14:49:48+00:00",
+      "latest": "2026-07-14T07:09:55+00:00"
+    },
+    "unresolved_risks": [
+      "Requires validation through primary user interviews in Part 2",
+      "Assumes public review complaints correlate with mobile session abandonment"
+    ],
+    "created_at": "2026-09-27T11:57:33.321751+00:00"
+  },
+  {
+    "opportunity_id": "OPP-13",
+    "cluster_id": "CLUST-13",
+    "cluster_name": "Navigation Or Discoverability Friction in Retrieving Personal Photo",
+    "evidence_volume": 2,
+    "source_diversity_count": 1,
+    "source_diversity_ratio": 0.2,
+    "recurrence_rate": 1.0,
+    "severity_assessment": "LOW",
+    "severity_rationale": "Low to moderate friction: General catalog retrieval or casual snapshot discovery.",
+    "retrieval_impact_rate": 0.5,
+    "workaround_inefficiency": "MODERATE",
+    "workaround_details": [
+      "ENDLESS_MANUAL_SCROLL"
+    ],
+    "evidence_confidence": 0.91,
+    "platform_breakdown": {
+      "Google Play": 2
+    },
+    "temporal_span": {
+      "earliest": "2020-10-16T08:36:42+00:00",
+      "latest": "2026-09-07T08:45:28+00:00"
+    },
+    "unresolved_risks": [
+      "Requires validation through primary user interviews in Part 2",
+      "Assumes public review complaints correlate with mobile session abandonment"
+    ],
+    "created_at": "2026-09-27T11:57:33.321772+00:00"
+  },
+  {
+    "opportunity_id": "OPP-14",
+    "cluster_id": "CLUST-14",
+    "cluster_name": "Metadata Or Indexing Friction in Retrieving Person Or Pet",
+    "evidence_volume": 2,
+    "source_diversity_count": 1,
+    "source_diversity_ratio": 0.2,
+    "recurrence_rate": 1.0,
+    "severity_assessment": "LOW",
+    "severity_rationale": "Low to moderate friction: General catalog retrieval or casual snapshot discovery.",
+    "retrieval_impact_rate": 1.0,
+    "workaround_inefficiency": "HIGH",
+    "workaround_details": [
+      "EXTERNAL_APP_SEARCH"
+    ],
+    "evidence_confidence": 0.91,
+    "platform_breakdown": {
+      "Google Play": 2
+    },
+    "temporal_span": {
+      "earliest": "2026-08-30T20:13:07+00:00",
+      "latest": "2026-09-16T00:52:25+00:00"
+    },
+    "unresolved_risks": [
+      "Requires validation through primary user interviews in Part 2",
+      "Assumes public review complaints correlate with mobile session abandonment"
+    ],
+    "created_at": "2026-09-27T11:57:33.321788+00:00"
+  },
+  {
+    "opportunity_id": "OPP-15",
+    "cluster_id": "CLUST-15",
+    "cluster_name": "Navigation Or Discoverability Friction in Retrieving Person Or Pet",
+    "evidence_volume": 2,
+    "source_diversity_count": 1,
+    "source_diversity_ratio": 0.2,
+    "recurrence_rate": 1.0,
+    "severity_assessment": "LOW",
+    "severity_rationale": "Low to moderate friction: General catalog retrieval or casual snapshot discovery.",
+    "retrieval_impact_rate": 1.0,
+    "workaround_inefficiency": "MODERATE",
+    "workaround_details": [
+      "ENDLESS_MANUAL_SCROLL",
+      "MANUAL_TIMELINE_SCROLL"
+    ],
+    "evidence_confidence": 0.91,
+    "platform_breakdown": {
+      "Google Play": 2
+    },
+    "temporal_span": {
+      "earliest": "2023-04-02T08:25:06+00:00",
+      "latest": "2026-07-20T09:25:18+00:00"
+    },
+    "unresolved_risks": [
+      "Requires validation through primary user interviews in Part 2",
+      "Assumes public review complaints correlate with mobile session abandonment"
+    ],
+    "created_at": "2026-09-27T11:57:33.321803+00:00"
+  },
+  {
+    "opportunity_id": "OPP-16",
+    "cluster_id": "CLUST-16",
+    "cluster_name": "Retrieval Relevance Friction in Retrieving Personal Photo",
+    "evidence_volume": 2,
+    "source_diversity_count": 1,
+    "source_diversity_ratio": 0.2,
+    "recurrence_rate": 1.0,
+    "severity_assessment": "LOW",
+    "severity_rationale": "Low to moderate friction: General catalog retrieval or casual snapshot discovery.",
+    "retrieval_impact_rate": 1.0,
+    "workaround_inefficiency": "HIGH",
+    "workaround_details": [
+      "EXTERNAL_APP_SEARCH"
+    ],
+    "evidence_confidence": 0.91,
+    "platform_breakdown": {
+      "Google Play": 2
+    },
+    "temporal_span": {
+      "earliest": "2020-07-22T21:11:11+00:00",
+      "latest": "2026-06-06T12:02:00+00:00"
+    },
+    "unresolved_risks": [
+      "Requires validation through primary user interviews in Part 2",
+      "Assumes public review complaints correlate with mobile session abandonment"
+    ],
+    "created_at": "2026-09-27T11:57:33.321818+00:00"
+  },
+  {
+    "opportunity_id": "OPP-17",
+    "cluster_id": "CLUST-17",
+    "cluster_name": "Retrieval Relevance Friction in Retrieving Person Or Pet",
+    "evidence_volume": 2,
+    "source_diversity_count": 1,
+    "source_diversity_ratio": 0.2,
+    "recurrence_rate": 1.0,
+    "severity_assessment": "LOW",
+    "severity_rationale": "Low to moderate friction: General catalog retrieval or casual snapshot discovery.",
+    "retrieval_impact_rate": 1.0,
+    "workaround_inefficiency": "HIGH",
+    "workaround_details": [
+      "MANUAL_TIMELINE_SCROLL",
+      "EXTERNAL_APP_SEARCH"
+    ],
+    "evidence_confidence": 0.91,
+    "platform_breakdown": {
+      "Google Play": 2
+    },
+    "temporal_span": {
+      "earliest": "2021-04-12T02:38:01+00:00",
+      "latest": "2022-06-05T02:03:27+00:00"
+    },
+    "unresolved_risks": [
+      "Requires validation through primary user interviews in Part 2",
+      "Assumes public review complaints correlate with mobile session abandonment"
+    ],
+    "created_at": "2026-09-27T11:57:33.321834+00:00"
+  }
+]
